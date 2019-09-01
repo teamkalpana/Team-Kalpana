@@ -1,0 +1,36 @@
+/*-- footer --*/
+footer,.copy-right{
+	background: #161616;
+}
+footer h4 {
+    font-size: 23px;
+    font-weight: 400;
+    color: #fff;
+}
+ul.list-w3 li a, ul.list-w3 li , .footer p.head,.copy-right p,.middle  p {
+    color: #777;
+    font-size: 16px;
+    letter-spacing: .5px;
+}
+ul.list-w3 li a:hover {
+    color: #aaa;
+}
+.copy-right p a {
+    color: #999;
+}
+.copy-right p a:hover {
+    color: #eee;
+}
+ul.list-w3 li {
+    list-style-type: none;
+}
+ul.list-w3 i {
+    width: 25px;
+    color: #888;
+}
+.copy-right ul.list-w3 {
+    justify-content: flex-end;
+}
+.copy-right {
+    border-top: 1px dashed #636363;
+}
