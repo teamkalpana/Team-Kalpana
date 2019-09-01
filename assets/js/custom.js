@@ -5,6 +5,20 @@ var resizeId;
 
 $(function() {
     "use strict";
+    var $body = $("body");
+    var $mainNavigation = $("#main-navigation");
+    var $navigation = $mainNavigation.find(".navbar-nav");
+
+     $navigation.find("> .nav-item > .nav-link").each(function (e) {
+        var text = $(this).text().replace(/\s/g, '');
+        var firstLetter = text.substring(0,1);
+        var hiddenLetters = text.substring(1);
+
+         $(this).text("");
+        $(this).append("<span>" + firstLetter + "</span>").append("<span class='ts-hidden'>" + hiddenLetters + "</span>");
+        $(this).find(".ts-hidden").css("transition-delay", (e*50) + "ms");
+    });
+    
     $(".ts-promo-numbers").each(function () {
         $(this).isInViewport(function(status) {
             if (status === "entered") {
